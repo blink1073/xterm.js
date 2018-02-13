@@ -98,7 +98,8 @@ function createTerminal() {
     macOptionIsMeta: optionElements.macOptionIsMeta.enabled,
     cursorBlink: optionElements.cursorBlink.checked,
     scrollback: parseInt(optionElements.scrollback.value, 10),
-    tabStopWidth: parseInt(optionElements.tabstopwidth.value, 10)
+    tabStopWidth: parseInt(optionElements.tabstopwidth.value, 10),
+    fontFamily: '"Source Code Pro", monospace'
   });
   window.term = term;  // Expose `term` to window for debugging purposes
   term.on('resize', function (size) {
